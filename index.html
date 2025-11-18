@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Sabores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body
+    class="bg-amber-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans scroll-smooth transition-all"
+  >
+    <!-- NAVBAR -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-white/80 dark:bg-gray-800/70 backdrop-blur-md shadow z-50 transition"
+    >
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4 px-6">
+        <!-- LEFT: BRAND -->
+        <div class="flex items-center gap-3">
+          <img
+            src="./assets/image/nos_sabores (noBG).png"
+            class="w-[60px] h-[60px]"
+          />
+          <h1 class="text-2xl font-bold">NÓS SABORES</h1>
+        </div>
+
+        <!-- RIGHT: LINKS + TOGGLE -->
+        <div class="flex items-center gap-6">
+          <div class="hidden sm:flex items-center space-x-6">
+            <a
+              href="#menu"
+              class="hover:text-green-700 dark:hover:text-green-400 font-medium transition"
+              >Menu</a
+            >
+            <a
+              href="#location"
+              class="hover:text-green-700 dark:hover:text-green-400 font-medium transition"
+              >Location</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-green-700 dark:hover:text-green-400 font-medium transition"
+              >Contacts</a
+            >
+            <a
+              href="#about"
+              class="hover:text-green-700 dark:hover:text-green-400 font-medium transition"
+              >About Us</a
+            >
+          </div>
+
+          <!-- DARK MODE BUTTON (always visible) -->
+          <button
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+            class="px-3 py-1 rounded-xl bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none"
+          >
+            <span id="themeIcon">🌙</span>
+          </button>
+
+          <!-- MOBILE MENU BUTTON (simple placeholder) -->
+          <button
+            id="mobileMenuBtn"
+            class="sm:hidden p-2 rounded-md bg-gray-200 dark:bg-gray-700"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-[url('./assets/image/portugueseCuisine.png')] bg-cover bg-center relative animate-fadeIn"
+    >
+      <div class="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
+
+      <div
+        class="relative backdrop-blur-sm bg-white/60 dark:bg-gray-800/60 p-10 rounded-2xl shadow-xl max-w-2xl mt-[40px] transition"
+      >
+        <img
+          src="./assets/image/nos_sabores (noBG).png"
+          class="w-52 h-52 object-contain mb-4 mx-auto drop-shadow-md animate-fadeInSlow"
+        />
+
+        <h1
+          class="text-6xl font-extrabold tracking-wide mb-4 text-gray-800 dark:text-white animate-slideUp"
+        >
+          NÓS SABORES
+        </h1>
+        <p
+          class="text-xl italic mb-0.5 text-gray-700 dark:text-gray-300 animate-slideUp"
+        >
+          Soil to Table
+        </p>
+        <p
+          class="text-l italic mb-0.5 text-gray-700 dark:text-gray-300 animate-slideUp"
+        >
+          ESTD • 2025
+        </p>
+
+        <div
+          class="flex flex-wrap justify-center gap-4 mt-4 animate-fadeInSlow"
+        >
+          <a
+            href="#menu"
+            class="px-6 py-3 bg-green-700 text-white rounded-xl shadow hover:bg-green-800 transition"
+            >Menu</a
+          >
+          <a
+            href="#location"
+            class="px-6 py-3 bg-green-700 text-white rounded-xl shadow hover:bg-green-800 transition"
+            >Location</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-3 bg-green-700 text-white rounded-xl shadow hover:bg-green-800 transition"
+            >Contacts</a
+          >
+          <a
+            href="#about"
+            class="px-6 py-3 bg-green-700 text-white rounded-xl shadow hover:bg-green-800 transition"
+            >About Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section
+      id="menu"
+      class="py-20 bg-green-50 dark:bg-gray-800 px-8 transition"
+    >
+      <h2 class="text-4xl font-semibold text-center mb-12 animate-slideUp">
+        Our Menu
+      </h2>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"
+      >
+        <div
+          class="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow hover:shadow-2xl transition group border border-green-200 dark:border-gray-600 animate-fadeInSlow"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+            class="rounded-xl h-40 w-full object-cover mb-4 group-hover:scale-105 transition"
+          />
+          <h3 class="text-2xl font-bold mb-2">Signature Flame Pan</h3>
+          <p>A sizzling blend of spices, herbs, and fresh produce.</p>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow hover:shadow-2xl transition group border border-green-200 dark:border-gray-600 animate-fadeInSlow"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1556911220-e15b29be8c0f"
+            class="rounded-xl h-40 w-full object-cover mb-4 group-hover:scale-105 transition"
+          />
+          <h3 class="text-2xl font-bold mb-2">Garden Fresh Bowl</h3>
+          <p>A colorful mix of seasonal vegetables sourced locally.</p>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow hover:shadow-2xl transition group border border-green-200 dark:border-gray-600 animate-fadeInSlow"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9"
+            class="rounded-xl h-40 w-full object-cover mb-4 group-hover:scale-105 transition"
+          />
+          <h3 class="text-2xl font-bold mb-2">Chef’s Salt Touch</h3>
+          <p>Lightly seasoned perfection with our signature salt finish.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section
+      id="location"
+      class="py-20 px-8 max-w-5xl mx-auto text-center animate-fadeInSlow"
+    >
+      <h2 class="text-4xl font-semibold mb-6">Our Location</h2>
+      <p class="text-lg mb-6">Find us at the heart of flavor and tradition.</p>
+
+      <iframe
+        class="w-full h-80 rounded-2xl shadow-lg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d370.8642501300652!2d-8.894717694913934!3d38.52555881381864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19430869dec547%3A0x94416eaa87fadbc6!2sLargo%20de%20Jesus!5e1!3m2!1sen!2spt!4v1763501283972!5m2!1sen!2spt"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section
+      id="contact"
+      class="py-20 bg-green-100 dark:bg-gray-700 px-8 transition"
+    >
+      <h2 class="text-4xl font-semibold text-center mb-8 animate-slideUp">
+        Contact Us
+      </h2>
+
+      <div
+        class="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-xl animate-fadeInSlow space-y-8"
+      >
+        <!-- CONTACT FORM -->
+        <form class="grid grid-cols-1 gap-6">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="p-4 border rounded-xl dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-green-600 outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="p-4 border rounded-xl dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-green-600 outline-none"
+          />
+          <textarea
+            placeholder="Your Message"
+            class="p-4 border rounded-xl h-32 dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-green-600 outline-none"
+          ></textarea>
+          <button
+            class="px-6 py-3 bg-green-700 text-white rounded-xl shadow hover:bg-green-800 transition"
+          >
+            Send Message
+          </button>
+        </form>
+
+        <!-- CONTACT DETAILS -->
+        <div class="grid grid-cols-2">
+          <div class="text-center space-y-4">
+            <p class="text-lg font-bold">
+              Email:
+              <strong class="text-green-700"> nossabores@mymail.com</strong>
+            </p>
+            <p class="text-lg font-bold">
+              Email:
+              <strong class="text-green-700"> nossabores@mymail.com</strong>
+            </p>
+          </div>
+          <div class="text-center space-y-4">
+            <p class="text-lg font-bold">
+              Phone: <strong class="text-green-700"> +351 987 987 987</strong>
+            </p>
+            <p class="text-lg font-bold">
+              WhatsApp:
+              <strong class="text-green-700"> +351 987 987 987</strong>
+            </p>
+          </div>
+        </div>
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="flex justify-center space-x-6 text-3xl mt-6">
+          <a
+            href="#"
+            class="hover:text-green-700 dark:hover:text-green-400 transition"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="#"
+            class="hover:text-green-700 dark:hover:text-green-400 transition"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="#"
+            class="hover:text-green-700 dark:hover:text-green-400 transition"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 px-8 max-w-5xl mx-auto animate-fadeInSlow">
+      <h2 class="text-4xl font-semibold text-center mb-8">About Us</h2>
+      <p class="text-center text-lg leading-relaxed max-w-3xl mx-auto">
+        At <strong>Nós Sabores</strong>, we bring the essence of local farms
+        straight to your plate. From soil to table, our dishes celebrate
+        freshness, craftsmanship, and authentic flavors.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 text-center bg-gray-900 text-white">
+      <p class="tracking-wide">© 2025 Nos Sabores. All rights reserved.</p>
+    </footer>
+
+    <!-- SIMPLE ANIMATIONS -->
+    <style>
+      .animate-fadeIn {
+        animation: fadeIn 1s ease-in-out both;
+      }
+      .animate-fadeInSlow {
+        animation: fadeIn 1.6s ease-in-out both;
+      }
+      .animate-slideUp {
+        animation: slideUp 1s ease-out both;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+
+    <!-- THEME TOGGLER SCRIPT -->
+    <script>
+      (function () {
+        const themeToggle = document.getElementById("themeToggle");
+        const themeIcon = document.getElementById("themeIcon");
+
+        // Initialize theme from localStorage or system preference
+        const saved = localStorage.getItem("theme");
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (saved === "dark" || (!saved && prefersDark)) {
+          document.documentElement.classList.add("dark");
+          themeIcon.textContent = "☀️";
+        } else {
+          document.documentElement.classList.remove("dark");
+          themeIcon.textContent = "🌙";
+        }
+
+        themeToggle.addEventListener("click", function () {
+          const isDark = document.documentElement.classList.toggle("dark");
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+          themeIcon.textContent = isDark ? "☀️" : "🌙";
+        });
+
+        // Simple mobile menu toggle (optional)
+        const mobileBtn = document.getElementById("mobileMenuBtn");
+        mobileBtn.addEventListener("click", function () {
+          const navLinks = document.querySelector(".sm\:flex");
+          if (navLinks) {
+            navLinks.classList.toggle("hidden");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
